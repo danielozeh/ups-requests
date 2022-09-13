@@ -11,10 +11,10 @@
         DD - Delivered Destination CFS (Freight Only)
         W - Warehousing (Freight Only)
         NA - Not Available
-        O - Our for delivery    
+        O - Out for delivery    
     }}
 */
 
 module.exports = {
-    trackingNumber: ''
+    trackingNumber: '1ZXXXXXXXXXXXXXXXX'
 }

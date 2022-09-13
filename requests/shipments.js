@@ -58,7 +58,7 @@ module.exports = {
                         UnitOfMeasurement: {
                             Code: "KGS"
                         },
-                        Weight: "10"
+                        Weight: "3"
                     },
                     PackageServiceOptions: ""
                 },
@@ -71,7 +71,7 @@ module.exports = {
                         UnitOfMeasurement: {
                             Code: "KGS"
                         },
-                        Weight: "10"
+                        Weight: "3"
                     },
                     PackageServiceOptions: ""
                 }

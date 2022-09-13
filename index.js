@@ -111,7 +111,23 @@ app.post('/landed-cost', function(req, res) {
 
 app.get('/tracking', function(req, res) {
     return new Promise((resolve, reject) => {
-        upsInstance.get(`/track/v1/details${tracking_number}`)
+        upsInstance.get(`/track/v1/details/${tracking_number.trackingNumber}?locale=en_US`)
+        .then(response => {
+            const { status, statusText, data } = response
+            if(status === 200 && statusText === 'OK') {
+                return res.status(200).json(data)
+            }
+            return res.status(400).json(data)
+        })
+        .catch(err => {
+            return res.status(500).json(err.response.data)
+        })
+    })
+})
+
+app.delete('/cancel-shipment', function(req, res) {
+    return new Promise((resolve, reject) => {
+        upsInstance.delete(`/ship/v1/shipments/cancel/${tracking_number.trackingNumber}`)
         .then(response => {
             const { status, statusText, data } = response
             if(status === 200 && statusText === 'OK') {
