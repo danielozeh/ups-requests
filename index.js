@@ -11,7 +11,7 @@ const landed_cost_data = require('./requests/landed_cost')
 const tracking_number = require('./requests/tracking')
 
 const upsInstance = axios.create({
-    baseURL: 'https://wwwcie.ups.com',
+    baseURL: config.url,
     headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type',
@@ -104,6 +104,7 @@ app.post('/landed-cost', function(req, res) {
             return res.status(400).json(data)
         })
         .catch(err => {
+            console.log(err)
             return res.status(500).json(err.response.data)
         })
     })

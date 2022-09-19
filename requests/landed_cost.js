@@ -1,5 +1,5 @@
 module.exports = {
-    currencyCode: 'NGN',
+    currencyCode: 'USD',
     transID: 'lsejo',
     alVersion: '1',
     allowPartialLandedCostResult: false,

@@ -73,15 +73,15 @@ module.exports = {
                 Name: "Daniel Ozeh",
                 ShipperNumber: "",
                 Address: {
-                    AddressLine: "12 Olaiya street",
-                    City: "Lagos",
-                    StateProvinceCode: "LA",
-                    PostalCode: "100212",
-                    CountryCode: "NG",
+                    AddressLine: "2 Seaforth Avenue",
+                    City: "Leeds",
+                    StateProvinceCode: "Leeds",
+                    PostalCode: "LS96BE",
+                    CountryCode: "GB",
                 },
             },
             Service: {
-                Code: "11",
+                Code: "08",
                 Description: "",
             },
             ShipmentTotalWeight: {
@@ -92,28 +92,26 @@ module.exports = {
                 Weight: "7",
             },
             DocumentsOnlyIndicator: '',
-            Package: [
-                {
-                    PackagingType: {
-                        Code: "02",
-                        Description: "Package",
+            Package: {
+                PackagingType: {
+                    Code: "02",
+                    Description: "Package",
+                },
+                Dimensions: {
+                    UnitOfMeasurement: {
+                        Code: "CM",
                     },
-                    Dimensions: {
-                        UnitOfMeasurement: {
-                            Code: "CM",
-                        },
-                        Length: "10",
-                        Width: "7",
-                        Height: "5",
+                    Length: "10",
+                    Width: "7",
+                    Height: "5",
+                },
+                PackageWeight: {
+                    UnitOfMeasurement: {
+                        Code: "KGS",
                     },
-                    PackageWeight: {
-                        UnitOfMeasurement: {
-                            Code: "KGS",
-                        },
-                        Weight: "2",
-                    }
+                    Weight: "2",
                 }
-            ],
+            },
             PaymentInformation: {
                 ShipmentCharge: {
                     Type: "02",

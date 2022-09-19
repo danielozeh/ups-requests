@@ -11,7 +11,7 @@ module.exports = {
                 Phone: {
                     Number: "2348134277988"
                 },
-                ShipperNumber: config.account_number,
+                ShipperNumber: "796AA3",
                 Address: {
                     AddressLine: "12 Olaiya street",
                     City: "Ikeja",
@@ -29,11 +29,26 @@ module.exports = {
                 FaxNumber: "",
                 TaxIdentificationNumber: "",
                 Address: {
-                    AddressLine: "355 West San Fernando Street",
-                    City: "San Jose",
-                    StateProvinceCode: "CA",
-                    PostalCode: "95113",
-                    CountryCode: "US",
+                    AddressLine: "12 Olaiya street",
+                    City: "Ikeja",
+                    StateProvinceCode: "LA",
+                    PostalCode: "100212",
+                    CountryCode: "NG",
+                },
+            },
+            ShipFrom: {
+                Name: "Daniel Ozeh",
+                AttentionName: "Daniel Ozeh",
+                TaxIdentificationNumber: "",
+                Phone: {
+                    Number: "2348134277988"
+                },
+                Address: {
+                    AddressLine: "12 Olaiya street",
+                    City: "Surulere",
+                    StateProvinceCode: "LA",
+                    PostalCode: "101283",
+                    CountryCode: "NG",
                 },
             },
             PaymentInformation: {
@@ -45,37 +60,32 @@ module.exports = {
                 }
             },
             Service: {
-                Code: "07",
-                Description: "World Wide express"
+                Code: "11",
+                Description: ""
             },
-            Package: [
-                {
-                    Description: "International Goods",
-                    Packaging: {
-                        Code: "02"
-                    },
-                    PackageWeight: {
-                        UnitOfMeasurement: {
-                            Code: "KGS"
-                        },
-                        Weight: "3"
-                    },
-                    PackageServiceOptions: ""
+            Package: {
+                Description: "Local Goods",
+                Packaging: {
+                    Code: "02",
+                    Description: ""
                 },
-                {
-                    Description: "International Goods",
-                    Packaging: {
-                        Code: "02"
+                PackageWeight: {
+                    UnitOfMeasurement: {
+                        Code: "KGS"
                     },
-                    PackageWeight: {
-                        UnitOfMeasurement: {
-                            Code: "KGS"
-                        },
-                        Weight: "3"
+                    Weight: "3"
+                },
+                Dimensions: {
+                    UnitOfMeasurement: {
+                        Code: "CM"
                     },
-                    PackageServiceOptions: ""
-                }
-            ],
+                    Length: "20",
+                    Width: "2",
+                    Height: "5"
+                },
+                PackageServiceOptions: ""
+            },
+            NumOfPiecesInShipment: "1",
             ItemizedChargesRequestedIndicator: "",
             RatingMethodRequestedIndicator: "",
             TaxInformationIndicator: "",
@@ -85,7 +95,7 @@ module.exports = {
         },
         LabelSpecification: {
             LabelImageFormat: {
-                Code: "GIF" //PNG 
+                Code: "PNG" //PNG 
             }
         }
     }
