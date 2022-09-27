@@ -29,11 +29,11 @@ module.exports = {
                 FaxNumber: "",
                 TaxIdentificationNumber: "",
                 Address: {
-                    AddressLine: "12 Olaiya street",
-                    City: "Ikeja",
-                    StateProvinceCode: "LA",
-                    PostalCode: "100212",
-                    CountryCode: "NG",
+                    AddressLine: "2 Seaforth Avenue",
+                    City: "Leeds",
+                    StateProvinceCode: "Leeds",
+                    PostalCode: "LS96BE",
+                    CountryCode: "GB",
                 },
             },
             ShipFrom: {
@@ -60,7 +60,7 @@ module.exports = {
                 }
             },
             Service: {
-                Code: "11",
+                Code: "07",
                 Description: ""
             },
             Package: {

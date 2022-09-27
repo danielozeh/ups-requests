@@ -6,6 +6,7 @@ const config = require('./config')
 const rate_data = require('./requests/rates')
 const address_data = require('./requests/address')
 const shipment_data = require('./requests/shipments')
+const pickup_data = require('./requests/pickup')
 const time_in_transit_data = require('./requests/time_in_transit')
 const landed_cost_data = require('./requests/landed_cost')
 const tracking_number = require('./requests/tracking')
@@ -64,6 +65,22 @@ app.post('/address/validate', function(req, res) {
 app.post('/shipment/create', function(req, res) {
     return new Promise((resolve, reject) => {
         upsInstance.post(`/ship/v1/shipments?additionaladdressvalidation=city`, shipment_data)
+        .then(response => {
+            const { status, statusText, data } = response
+            if(status === 200 && statusText === 'OK') {
+                return res.status(200).json(data)
+            }
+            return res.status(400).json(data)
+        })
+        .catch(err => {
+            return res.status(500).json(err.response.data)
+        })
+    })
+})
+
+app.post('/pickup', function(req, res) {
+    return new Promise((resolve, reject) => {
+        upsInstance.post(`/ship/v1/pickups`, pickup_data)
         .then(response => {
             const { status, statusText, data } = response
             if(status === 200 && statusText === 'OK') {
