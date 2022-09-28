@@ -13,8 +13,8 @@ module.exports = {
             RequestAction: 'AV',
         },
         Address: {
-            City: 'Lagos',
-            StateProviceCode: 'AB'
+            City: 'Milwaukee',
+            StateProviceCode: 'AL'
         }
     }
 }

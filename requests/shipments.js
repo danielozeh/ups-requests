@@ -29,11 +29,11 @@ module.exports = {
                 FaxNumber: "",
                 TaxIdentificationNumber: "",
                 Address: {
-                    AddressLine: "2 Seaforth Avenue",
-                    City: "Leeds",
-                    StateProvinceCode: "Leeds",
-                    PostalCode: "LS96BE",
-                    CountryCode: "GB",
+                    AddressLine: "4651 Chapmans Lane",
+                    City: "Alamo",
+                    StateProvinceCode: "NM",
+                    PostalCode: "87825",
+                    CountryCode: "US",
                 },
             },
             ShipFrom: {
@@ -60,7 +60,7 @@ module.exports = {
                 }
             },
             Service: {
-                Code: "07",
+                Code: "08",
                 Description: ""
             },
             Package: {

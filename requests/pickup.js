@@ -12,7 +12,7 @@ module.exports = {
         PickupDateInfo: {
             CloseTime: '1700',
             ReadyTime: '1000',
-            PickupDate: '20220922'
+            PickupDate: '20220929'
         },
         PickupAddress: {
             CompanyName: 'Daniel Ozeh',
@@ -31,7 +31,7 @@ module.exports = {
         PickupPiece: {
             ServiceCode: '007',
             Quantity: '1',
-            DestinationCountryCode: 'GB',
+            DestinationCountryCode: 'US',
             ContainerCode: '01', //01 - package, 02 - UPS Letter, 03 - Pallet
         },
         TotalWeight: {
