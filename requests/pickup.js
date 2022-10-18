@@ -12,7 +12,7 @@ module.exports = {
         PickupDateInfo: {
             CloseTime: '1700',
             ReadyTime: '1000',
-            PickupDate: '20220929'
+            PickupDate: '20221020'
         },
         PickupAddress: {
             CompanyName: 'Daniel Ozeh',

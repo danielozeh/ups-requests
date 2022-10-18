@@ -11,7 +11,7 @@ module.exports = {
                 Phone: {
                     Number: "2348134277988"
                 },
-                ShipperNumber: "796AA3",
+                ShipperNumber: config.account_number,
                 Address: {
                     AddressLine: "12 Olaiya street",
                     City: "Ikeja",
@@ -30,10 +30,10 @@ module.exports = {
                 TaxIdentificationNumber: "",
                 Address: {
                     AddressLine: "4651 Chapmans Lane",
-                    City: "Alamo",
-                    StateProvinceCode: "NM",
+                    City: "Leeds",
+                    StateProvinceCode: "",
                     PostalCode: "87825",
-                    CountryCode: "US",
+                    CountryCode: "GB",
                 },
             },
             ShipFrom: {
@@ -60,7 +60,7 @@ module.exports = {
                 }
             },
             Service: {
-                Code: "08",
+                Code: "07",
                 Description: ""
             },
             Package: {
